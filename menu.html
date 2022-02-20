@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <script type="text/javascript" language="javascript">
+        function val() {
+            var get = document.getElementById("select").value
+            if (get == "select") {
+                alert("plz select")
+            } else {
+                document.getElementById("para").innerHTML = "You selected:" + get
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <select id="select">
+    <option value="select">Select</option>    
+    <option value="css">CSS</option>
+    <option value="js">JS</option>
+    </select>
+    <input type="button" value="GetSelectedItem" onclick="val()" />
+    <p id="para"></p>
+</body>
+
+</html>

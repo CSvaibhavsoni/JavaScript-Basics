@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        var banner_array = new Array('orange.jpg', 'banana.jpg')
+        var banner = 0;
+
+        function checkbanner() {
+            if (document.images) {
+
+                banner++
+                if (banner == banner_array.length) {
+                    banner = 0
+                }
+                var i = banner_array[banner]
+
+                document.changebanner1.src = ''
+
+                setTimeout("checkbanner()", 500);
+
+            }
+
+        }
+    </script>
+
+</head>
+
+<body onload="checkbanner() ">
+    <center>
+        <img src="banana.jpg " width="100% " height="300 " name="chanegbanner1 " />
+    </center>
+</body>
+
+</html>

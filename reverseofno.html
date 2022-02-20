@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <h1>Reverse of number</h1>
+    <script type="text/javascript">
+        function check() {
+            var a, b, temp = 0
+            var no1 = document.getElementById("n3").value
+            b = no1
+            while (no1 > 0) {
+                a = no1 % 10
+                no1 = parseInt(no1 / 10)
+                temp = temp * 10 + a
+            }
+            alert("Reverse=" + temp)
+
+
+
+        }
+    </script>
+</head>
+
+<body bgcolor="yellow">
+
+    <input type="text" id="n3" placeholder="Enter no"> <br>
+    <input type="button" id="b1" value="Reverse" onclick="check()">
+</body>
+
+</html>

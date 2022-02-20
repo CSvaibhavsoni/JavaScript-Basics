@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Banner URL linking</title>
+    <script type="text/javascript" language="javascript">
+        banner_array = new Array('orange.jpg', 'banana.jpg');
+        url_array = new Array('http://google.com', 'http://yahoo.com')
+        img = 0
+
+        function displaybanner(num) {
+            img = img + num
+            if (img > banner_array.length - 1) {
+                img = 0
+            }
+            if (img < 0) {
+                img = banner_array.length - 1
+            }
+            document.fruit.src = banner_array[img]
+
+
+        }
+
+
+
+        function displayurl() {
+            document.location.href = url_array[img]
+        }
+    </script>
+</head>
+
+<body>
+
+    <input type="button" value="previous" onclick="displaybanner(-1)" />
+    <a href="javascript:displayurl()">
+        <br><br><br><br>; &Tab; <img src="orange.jpg" alt="google" height="10%" name="fruit" width="20%">
+    </a>
+    <br>
+    <input type="button" value="next" onclick="displaybanner(1)" />
+</body>
+
+</html>

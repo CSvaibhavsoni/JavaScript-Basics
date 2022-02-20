@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <center>
+        <h1>User log in</h1>
+    </center>
+</head>
+
+<body bgcolor="lightblue">
+    <h3>
+        <center>
+            <h2>Output</h2>
+
+            <script type="text/javascript">
+                function login() {
+                    alert("checking.....")
+
+                    var number
+                    var number2
+                    number = document.getElementById("n1").value
+                    number2 = Number(document.getElementById("n2").value)
+
+                    if (number == "GPG" && number2 == "002") {
+                        alert("Success")
+                    } else {
+                        alert("check username and pass")
+                    }
+                }
+            </script>
+        </center>
+    </h3>
+    <center>
+        <input type="text" id="n1" placeholder="Enter username">
+        <input type="text" id="n2" placeholder="Enter pass"><br><br><br><br>
+        <input type="button" value="LogInk" onclick="login()">
+    </center>
+</body>
+
+</html>

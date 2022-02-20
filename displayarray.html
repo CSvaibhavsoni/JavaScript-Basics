@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <center>
+        <h1>Array Element</h1>
+    </center>
+</head>
+
+<body bgcolor="yellow">
+    <h3>
+        <center>
+            <h2>Output</h2>
+
+            <script type="text/javascript">
+                function Prime() {
+                    alert("checking.....")
+                    var i
+                    var flag = 0
+                    var number
+                    number = Number(document.getElementById("n1").value);
+
+                    for (i = 2; i <= number / 2; i++) {
+                        if (number % i == 0) {
+                            flag = 1
+
+                        }
+                    }
+                    if (flag == 0) {
+                        alert(number + "-The inputed number is Prime")
+                    } else {
+                        alert(number + "-The inputted number is not Prime")
+                    }
+                }
+            </script>
+        </center>
+    </h3>
+    <center>
+        <input type="text" id="n1" placeholder="Enter value"><br><br>
+        <input type="button" value="check" onclick="Prime()">
+    </center>
+</body>
+
+</html>

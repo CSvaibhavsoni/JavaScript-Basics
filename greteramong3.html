@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <h1>Greater No</h1>
+    <script type="text/javascript">
+        function check() {
+            var no1 = document.getElementById("n1").value
+            var no2 = document.getElementById("n2").value
+            var no3 = document.getElementById("n3").value
+
+            if (no1 < no2) {
+                if (no2 > no3) {
+                    alert(no2 + "_is greter")
+                } else {
+                    alert(no3 + "_is greter")
+                }
+            } else if (no1 > no3) {
+                alert(no1 + "_is greter")
+            }
+
+        }
+    </script>
+</head>
+
+<body bgcolor="yellow">
+    <input type="text" id="n1" placeholder="Number 1">
+    <input type="text" id="n2" placeholder="Number 2">
+    <input type="text" id="n3" placeholder="Number 3"> <br>
+    <input type="button" id="b1" value="Greater" onclick="check()">
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <center>
+        <h1>Fabonacci Series</h1>
+        <h4>Fibonacci sequence Posted by: Margaret Rouse WhatIs.com<br> The Fibonacci sequence is a set of numbers that starts with a one or a zero,<br> followed by a one, and proceeds based on the rule that each number (called a Fibonacci number) is equal
+            to the sum of the preceding two numbers.<br> If the Fibonacci sequence is denoted F (n),<br> where n is the first term in the sequence,<br> the following equation obtains for n = 0, where the first two terms are defined as 0 and 1 by convention</h4>
+    </center>
+</head>
+
+<body bgcolor="yellow">
+    <h3>
+        <center>
+            <h2>Output</h2>
+            <script type="text/javascript">
+                var var1 = 0
+                var var2 = 1
+                var var3
+                document.write(var1 + "<br/>")
+                document.write(var2 + "<br/>")
+                var num = prompt("Enter number")
+                for (var i = 3; i <= num; i++) {
+                    var3 = var1 + var1
+                    var1 = var2
+                    var2 = var3
+                    document.write(var3 + "<br/>")
+                }
+            </script>
+        </center>
+    </h3>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Multiple op with rollover</title>
+    <script type="text/javascript">
+        function check1() {
+            document.fruit.src = 'orange.jpg';
+            document.getElementById("para").innerHTML = "Oranges are orange in color"
+        }
+
+        function check2() {
+            document.fruit.src = 'banana.jpg';
+            document.getElementById("para").innerHTML = "Banana are yellow in color"
+        }
+    </script>
+</head>
+
+<body bgcolor="yellow">
+    <h2>Text rollover</h2>
+    <a onmouseover="check1()">
+        <h4>Orange</h4>
+    </a>
+
+    <img src="orange.jpg" height="400" width="405" name="fruit">
+    <p id="para">orange and banana</p>
+
+    <a onmouseover="check2()">
+        <h4>Banana</h4>
+    </a>
+
+</body>
+
+</html>
